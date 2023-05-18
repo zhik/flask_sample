@@ -1,0 +1,15 @@
+blinker @ file:///home/conda/feedstock_root/build_artifacts/blinker_1681349778161/work
+click @ file:///home/conda/feedstock_root/build_artifacts/click_1666798198223/work
+Flask @ file:///home/conda/feedstock_root/build_artifacts/flask_1682966527207/work
+importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1682176699712/work
+itsdangerous @ file:///home/conda/feedstock_root/build_artifacts/itsdangerous_1648147185463/work
+Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1654302431367/work
+MarkupSafe @ file:///home/conda/feedstock_root/build_artifacts/markupsafe_1674135794919/work
+numpy
+pandas
+python-dateutil
+pytz
+six
+tzdata
+Werkzeug @ file:///home/conda/feedstock_root/build_artifacts/werkzeug_1683636301408/work
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1677313463193/work
