@@ -1,0 +1,39 @@
+version: '3'
+services:
+  postgres:
+    image: kartoza/postgis:15-3.3
+    hostname: postgres
+    ports:
+      - 5432:5432
+    container_name: bus-db
+    env_file:
+      - .env
+  server:
+    build: ./server
+    ports:
+      - 5000:5000
+    volumes:
+      - ./server:/app
+    container_name: bus-api-server
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      WAIT_HOSTS: postgres:5432
+      WAIT_AFTER_HOSTS: 1
+    env_file:
+      - .env
+  client:
+    build: ./client
+    ports:
+      - 8000:8000
+    container_name: bus-client
+    restart: always
+    volumes: #for dev only
+      - ./client/src:/app/src
+    depends_on:
+      - server
+    environment:
+      API_HOST: http://localhost:5000
+    env_file:
+      - .env
