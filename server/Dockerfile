@@ -6,6 +6,8 @@ RUN apk --update add gcc build-base freetype-dev openblas-dev postgresql-dev pyt
 
 RUN pip install psycopg2 flask pandas sqlalchemy
 
+RUN pip install flask-cors
+
 # COPY ./requirements.txt /app/requirements.txt
 # RUN pip install -r requirements.txt
 

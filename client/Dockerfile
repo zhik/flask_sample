@@ -4,6 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 
 RUN npm install --dev
+RUN npm i d3 @turf/turf
 
 COPY . .
 
